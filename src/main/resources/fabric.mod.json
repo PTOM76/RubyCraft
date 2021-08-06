@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "rubycraft",
+  "version": "${version}",
+  "name": "RubyCraft",
+  "_comment": "This is small mod for industry and magic",
+  "description": "This is mod that add ruby related things",
+  "authors": [
+    "Pitan"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/rubycraft-p",
+    "sources": "https://github.com/PTOM76/RubyCraft",
+    "issues": "https://github.com/PTOM76/RubyCraft/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/rubycraft/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ml.pkom.rubycraft.RubyCraft"
+    ],
+    "client": [
+      "ml.pkom.rubycraft.RubyCraftClient"
+    ],
+    "rei_plugins": [
+      "ml.pkom.rubycraft.rei.REIPlugin"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "rubycraft.mixins.json",
+      "environment": "*"
+    },
+    {
+      "config": "rubycraft.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "simple_pipes": ">=0.5.0",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
