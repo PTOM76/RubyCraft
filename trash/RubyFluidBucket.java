@@ -2,16 +2,18 @@ package ml.pkom.rubycraft.items;
 
 import ml.pkom.rubycraft.RubyCraft;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 
-public class RubyCane extends Item {
+public class RubyFluidBucket extends Item {
     public static Settings itemSettings = new Settings();
 
     static {
         itemSettings.group(RubyCraft.RUBY_GROUP);
         itemSettings.maxCount(1);
+        itemSettings.recipeRemainder(Items.BUCKET);
     }
 
-    public RubyCane(Settings settings) {
+    public RubyFluidBucket(Settings settings) {
         super(settings);
     }
 
@@ -20,6 +22,6 @@ public class RubyCane extends Item {
     }
 
     public static Item newItem() {
-        return new RubyCane(getSettings());
+        return new RubyFluidBucket(getSettings());
     }
 }

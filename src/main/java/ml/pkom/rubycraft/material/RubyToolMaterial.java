@@ -1,5 +1,6 @@
 package ml.pkom.rubycraft.material;
 
+import ml.pkom.rubycraft.Tags;
 import ml.pkom.rubycraft.items.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -35,7 +36,7 @@ public class RubyToolMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(Items.RUBY);
+        return Ingredient.fromTag(Tags.RUBY_INGOTS);
     }
     
 }

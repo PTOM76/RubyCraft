@@ -1,17 +1,19 @@
 package ml.pkom.rubycraft.items;
 
 import ml.pkom.rubycraft.RubyCraft;
+import net.minecraft.item.FoodComponent;
+import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
 
-public class RubyCane extends Item {
+public class RubyApple extends Item {
     public static Settings itemSettings = new Settings();
 
     static {
         itemSettings.group(RubyCraft.RUBY_GROUP);
-        itemSettings.maxCount(1);
+        itemSettings.food(new FoodComponent.Builder().hunger(6).saturationModifier(5F).build());
     }
 
-    public RubyCane(Settings settings) {
+    public RubyApple(Settings settings) {
         super(settings);
     }
 
@@ -20,6 +22,6 @@ public class RubyCane extends Item {
     }
 
     public static Item newItem() {
-        return new RubyCane(getSettings());
+        return new RubyApple(getSettings());
     }
 }

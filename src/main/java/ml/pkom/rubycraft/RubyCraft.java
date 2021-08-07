@@ -1,15 +1,11 @@
 package ml.pkom.rubycraft;
 
+import ml.pkom.rubycraft.register.*;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import ml.pkom.rubycraft.items.Items;
-import ml.pkom.rubycraft.register.BlockRegister;
-import ml.pkom.rubycraft.register.EntitiesRegister;
-import ml.pkom.rubycraft.register.GenerationRegister;
-import ml.pkom.rubycraft.register.ItemRegister;
-import ml.pkom.rubycraft.register.ScreenHandlerRegister;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
@@ -32,6 +28,7 @@ public class RubyCraft implements ModInitializer {
 	public void onInitialize() {
         log(Level.INFO, "Initializing");
         instance = this;
+        //FluidRegister.start();
         ItemRegister.start();
         BlockRegister.start();
         EntitiesRegister.start();

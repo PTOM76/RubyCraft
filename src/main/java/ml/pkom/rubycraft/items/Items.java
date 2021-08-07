@@ -11,6 +11,7 @@ public class Items {
     public static Item RUBY_INGOT = RubyIngot.newItem();
     public static Item RUBY_NUGGET = RubyNugget.newItem();
     public static Item RUBY_PEARL = RubyPearl.newItem();
+    public static Item RUBY_APPLE = RubyApple.newItem();
     public static Item RUBY_CANE = RubyCane.newItem();
     public static Item RUBY_SWORD = RubySword.newItem();
     public static Item RUBY_AXE = RubyAxe.newItem();
@@ -21,10 +22,12 @@ public class Items {
     public static Item RUBY_CHESTPLATE = RubyChestplate.newItem();
     public static Item RUBY_LEGGINGS = RubyLeggings.newItem();
     public static Item RUBY_BOOTS = RubyBoots.newItem();
+    public static Item RUBY_SHIELD = RubyShield.newItem();
     public static Item RUBY_STORAGE = RubyStorage.newItem();
     public static Item MACHINE_BLOCK = MachineBlock.newItem();
     public static Item RUBY_GEAR = RubyGear.newItem();
     public static Item CRUSHING_MACHINE0 = CrushingMachine0.newItem();
     public static Item CRUSHING_MACHINE = CrushingMachine.newItem();
     public static Item RUBY_PIPE = RubyPipe.newItem();
+    //public static Item RUBY_FLUID_BUCKET = RubyFluidBucket.newItem();
 }

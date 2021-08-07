@@ -15,6 +15,7 @@ public class BlockRegister {
         register(Blocks.MACHINE_BLOCK, "machine_block");
         register(Blocks.RUBY_STORAGE, "ruby_storage");
         register(Blocks.RUBY_PIPE, "ruby_pipe");
+        //register(Blocks.RUBY_FLUID, "ruby_fluid");
     }
 
     public static void register(Block block, String id) {

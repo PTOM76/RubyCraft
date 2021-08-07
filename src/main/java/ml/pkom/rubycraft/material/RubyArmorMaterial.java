@@ -1,11 +1,15 @@
 package ml.pkom.rubycraft.material;
 
+import ml.pkom.rubycraft.Tags;
 import ml.pkom.rubycraft.items.Items;
+import net.fabricmc.fabric.api.tag.TagRegistry;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.tag.Tag;
+import net.minecraft.util.Identifier;
 
 public class RubyArmorMaterial implements ArmorMaterial {
 
@@ -36,7 +40,7 @@ public class RubyArmorMaterial implements ArmorMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(Items.RUBY);
+        return Ingredient.fromTag(Tags.RUBY_INGOTS);
     }
 
     @Override

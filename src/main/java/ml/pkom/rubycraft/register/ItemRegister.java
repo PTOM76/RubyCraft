@@ -15,6 +15,7 @@ public class ItemRegister {
         register(Items.RUBY_INGOT, "ruby_ingot");
         register(Items.RUBY_NUGGET, "ruby_nugget");
         register(Items.RUBY_PEARL, "ruby_pearl");
+        register(Items.RUBY_APPLE, "ruby_apple");
         register(Items.RUBY_CANE, "ruby_cane");
         register(Items.RUBY_SWORD, "ruby_sword");
         register(Items.RUBY_AXE, "ruby_axe");
@@ -25,12 +26,14 @@ public class ItemRegister {
         register(Items.RUBY_CHESTPLATE, "ruby_chestplate");
         register(Items.RUBY_LEGGINGS, "ruby_leggings");
         register(Items.RUBY_BOOTS, "ruby_boots");
+        register(Items.RUBY_SHIELD, "ruby_shield");
         register(Items.RUBY_STORAGE, "ruby_storage");
         register(Items.RUBY_GEAR, "ruby_gear");
         register(Items.MACHINE_BLOCK, "machine_block");
         register(Items.CRUSHING_MACHINE0, "crushing_machine0");
         register(Items.CRUSHING_MACHINE, "crushing_machine");
         register(Items.RUBY_PIPE, "ruby_pipe");
+        //register(Items.RUBY_FLUID_BUCKET, "ruby_fluid_bucket");
     }
 
     public static void register(Item item, String id) {

@@ -11,4 +11,5 @@ public class Blocks {
     public static Block MACHINE_BLOCK = MachineBlock.newBlock();
     public static Block RUBY_STORAGE = RubyStorage.newBlock();
     public static RubyPipe RUBY_PIPE = RubyPipe.newBlock();
+    //public static Block RUBY_FLUID = RubyFluidBlock.newBlock();
 }

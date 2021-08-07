@@ -1,6 +1,7 @@
 {
     "itemGroup.rubycraft.all": "RubyCraft",
     "item.rubycraft.ruby": "ルビー",
+    "item.rubycraft.ruby_apple": "ルビーアップル",
     "item.rubycraft.ruby_ingot": "ルビーインゴット",
     "item.rubycraft.ruby_nugget": "ルビーナゲット",
     "item.rubycraft.ruby_dust": "ルビーの粉末",
@@ -8,6 +9,7 @@
     "block.rubycraft.polished_ruby_block": "磨かれたルビーブロック",
     "block.rubycraft.ruby_ore": "ルビー鉱石",
     "block.rubycraft.ruby_chest": "ルビーチェスト",
+    "block.rubycraft.ruby_storage": "ルビーストレージ",
     "item.rubycraft.ruby_sword": "ルビーの剣",
     "item.rubycraft.ruby_axe": "ルビーのオノ",
     "item.rubycraft.ruby_pickaxe": "ルビーのピッケル",
@@ -24,5 +26,6 @@
     "item.rubycraft.ruby_gear": "ルビーの歯車",
     "block.rubycraft.machine_block": "マシンブロック",
     "block.rubycraft.ruby_pipe": "ルビーパイプ",
+    "item.rubycraft.ruby_shield": "ルビーの盾",
     "msg.rubycraft.crushing_machine_error": "§cルビー、ルビーインゴット、ルビー鉱石のどれかを持ちながらルビー粉砕機をクリックしてください。"
 }

@@ -14,6 +14,7 @@ import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.util.Identifier;
 
 public class RubyCraftClient implements ClientModInitializer {
     @Override
@@ -23,6 +24,9 @@ public class RubyCraftClient implements ClientModInitializer {
 
         registerItemPipeRender(EntitiesRegister.RUBY_PIPE_ENTITY);
         setCutoutLayer(Blocks.RUBY_PIPE);
+
+        //SetupFluidRendering.start(FluidRegister.STILL_RUBY_FLUID, FluidRegister.FLOWING_RUBY_FLUID, new Identifier("minecraft", "water"), 0xDF2E75);
+        //BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), FluidRegister.STILL_RUBY_FLUID, FluidRegister.FLOWING_RUBY_FLUID);
     }
 
     private static void setCutoutLayer(Block block) {
